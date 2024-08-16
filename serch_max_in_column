@@ -1,0 +1,14 @@
+int[][] met={{2,8,5},{3,10,6},{9,0,1},{2,8,5}};
+        int row= met.length;
+        int col=met[0].length;
+        int maxsum=Integer.MIN_VALUE;
+        for (int i = 0; i < col ; i++) {
+            int sum=0;
+            for (int j = 0; j < row; j++) {
+                sum += met[j][i];
+            }
+                if(sum > maxsum)
+                    maxsum=sum;
+
+        }
+        System.out.println(maxsum);
